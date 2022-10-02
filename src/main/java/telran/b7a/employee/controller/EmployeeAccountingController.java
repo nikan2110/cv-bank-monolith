@@ -1,5 +1,7 @@
 package telran.b7a.employee.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -32,7 +34,7 @@ public class EmployeeAccountingController {
 	}
 
 	@PostMapping("/signup")
-	public InfoEmployeeDto registerEmployee(@RequestBody RegisterEmployeeDto newEmployee) {
+	public InfoEmployeeDto registerEmployee(@RequestBody @Valid RegisterEmployeeDto newEmployee)  {
 		return employeeAccountService.registerEmployee(newEmployee);
 	}
 
