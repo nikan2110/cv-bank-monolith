@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @TestMethodOrder(value = MethodOrderer.OrderAnnotation.class)
 @AutoConfigureMockMvc
-class CvbankApplicationEmployerTests {
+class CvbankApplicationEmployerTest {
 
     private static final String BASE_URL_EMPLOYEE = "/cvbank/employer";
     EmployerService employerService;
@@ -45,7 +45,7 @@ class CvbankApplicationEmployerTests {
 
 
     @Autowired
-    public CvbankApplicationEmployerTests(EmployerService employerService, ModelMapper modelMapper, MockMvc mockMvc, EmployerMongoRepository employerMongoRepository) {
+    public CvbankApplicationEmployerTest(EmployerService employerService, ModelMapper modelMapper, MockMvc mockMvc, EmployerMongoRepository employerMongoRepository) {
         this.employerService = employerService;
         this.modelMapper = modelMapper;
         this.mockMvc = mockMvc;

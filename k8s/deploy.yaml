@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cvbank-deploy
+  labels:
+    app: cvbank
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cvbank
+  template:
+    metadata:
+      labels:
+        app: cvbank
+    spec:
+      containers:
+        - name: cvbank-container
+          image: beg2016/cvbank:0.0.1-SNAPSHOT

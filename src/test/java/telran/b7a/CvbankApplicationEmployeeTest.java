@@ -8,6 +8,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.params.ParameterizedTest;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -31,7 +32,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @TestMethodOrder(value = MethodOrderer.OrderAnnotation.class)
 @AutoConfigureMockMvc
-class CvbankApplicationEmployeeTests {
+class CvbankApplicationEmployeeTest {
 
     private static final String BASE_URL_EMPLOYEE = "/cvbank/employee";
     EmployeeAccountServiceImpl employeeService;
@@ -43,7 +44,7 @@ class CvbankApplicationEmployeeTests {
 
 
     @Autowired
-    public CvbankApplicationEmployeeTests(EmployeeAccountServiceImpl employeeService, ModelMapper modelMapper, MockMvc mockMvc, EmployeeMongoRepository employeeMongoRepository) {
+    public CvbankApplicationEmployeeTest(EmployeeAccountServiceImpl employeeService, ModelMapper modelMapper, MockMvc mockMvc, EmployeeMongoRepository employeeMongoRepository) {
         this.employeeService = employeeService;
         this.modelMapper = modelMapper;
         this.mockMvc = mockMvc;
@@ -63,7 +64,7 @@ class CvbankApplicationEmployeeTests {
             .lastName("Osborn")
             .build();
 
-    @Test
+    @ParameterizedTest
     @Order(1)
     public void addEmployee() throws Exception {
         RegisterEmployeeDto newEmployeeDto = modelMapper.map(employee, RegisterEmployeeDto.class);
