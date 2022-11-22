@@ -30,7 +30,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-    	System.out.println("User detail service");
         User user;
         if (employerRepo.existsById(username)) {
             Employer employer = employerRepo.findById(username).orElse(null);
@@ -45,7 +44,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
             return user;
         }
         if (adminRepo.existsById(username)) {
-            System.out.println("admin");
             Admin admin = adminRepo.findById(username).orElse(null);
             user = new User(username, admin.getPassword(),
                     AuthorityUtils.createAuthorityList("ROLE_ADMIN"));
