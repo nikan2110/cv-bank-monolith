@@ -1,13 +1,18 @@
 package telran.b7a.notifications.factory;
 
-import lombok.Data;
-import org.springframework.beans.factory.annotation.Value;
-import telran.b7a.notifications.factory.types.EmailType;
+import java.util.Properties;
 
-import javax.mail.*;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Value;
+
+import telran.b7a.notifications.factory.types.EmailType;
 
 public class Email {
     EmailType emailInfo;

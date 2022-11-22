@@ -1,13 +1,37 @@
-{
-  "properties": [
-    {
-      "name": "BASE_URL",
-      "type": "java.lang.String",
-      "description": "A description for 'BASE_URL'"
-    },
-    {
-      "name": "MAIL_PASS",
-      "type": "java.lang.String",
-      "description": "Description for MAIL_PASS."
+{"properties": [
+  {
+    "name": "BASE_URL",
+    "type": "java.lang.String",
+    "description": "A description for 'BASE_URL'"
+  },
+  {
+    "name": "MAIL_PASS",
+    "type": "java.lang.String",
+    "description": "Description for MAIL_PASS."
+  },
+  {
+    "name": "API_KEY",
+    "type": "java.lang.String",
+    "description": "A description for 'API_KEY'"
+  },
+  {
+    "name": "API_KEY",
+    "type": "java.lang.String",
+    "description": "A description for 'API_KEY'"
+  },
+  {
+    "name": "API_KEY",
+    "type": "java.lang.String",
+    "description": "A description for 'API_KEY'"
+  },
+  {
+    "name": "MAIL_PASS",
+    "type": "java.lang.String",
+    "description": "A description for 'MAIL_PASS'"
+  },
+  {
+    "name": "MAIL_PASS",
+    "type": "java.lang.String",
+    "description": "A description for 'MAIL_PASS'"
   }
 ]}

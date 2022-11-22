@@ -1,4 +1,4 @@
-package telran.b7a.employer.notifications.implementations;
+package telran.b7a.notifications.implementations;
 
 import java.util.Properties;
 
@@ -13,7 +13,7 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import telran.b7a.employer.notifications.interfaces.NotifyUser;
+import telran.b7a.notifications.interfaces.NotifyUser;
 
 @Component
 public class NotifyUserByEmail implements NotifyUser {

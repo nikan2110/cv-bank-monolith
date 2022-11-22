@@ -25,6 +25,7 @@ import telran.b7a.employee.service.EmployeeAccountService;
 @RequestMapping("/cvbank/employee")
 @CrossOrigin(origins = "*", methods = { RequestMethod.DELETE, RequestMethod.GET, RequestMethod.OPTIONS,
 		RequestMethod.POST, RequestMethod.PUT }, allowedHeaders = "*", exposedHeaders = "*")
+
 public class EmployeeAccountingController {
 	EmployeeAccountService employeeAccountService;
 

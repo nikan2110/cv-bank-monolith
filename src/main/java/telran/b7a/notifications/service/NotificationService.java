@@ -1,4 +1,4 @@
-package telran.b7a.employer.notifications.service;
+package telran.b7a.notifications.service;
 
 public interface NotificationService {
 	void notifyUser(String userAddress);

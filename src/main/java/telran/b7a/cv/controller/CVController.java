@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Set;
 
 @RestController
-
 @RequestMapping("cvbank/cv")
 @CrossOrigin(origins = "*",
         methods = {RequestMethod.DELETE, RequestMethod.GET, RequestMethod.OPTIONS, RequestMethod.POST, RequestMethod.PUT},

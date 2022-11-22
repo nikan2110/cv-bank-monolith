@@ -1,8 +1,9 @@
-package telran.b7a.employer.notifications.controller;
+package telran.b7a.notifications.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import telran.b7a.employer.notifications.service.NotificationService;
+
+import telran.b7a.notifications.service.NotificationService;
 
 @RestController
 @RequestMapping("/cvbank/notify")
