@@ -10,6 +10,7 @@
 	<groupId>telran.b7a</groupId>
 	<artifactId>cvbank</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>cvbank</name>
 	<description>cvbank.backend</description>
 	<properties>
