@@ -64,7 +64,7 @@ class CvbankApplicationEmployeeTest {
             .lastName("Osborn")
             .build();
 
-    @ParameterizedTest
+    @Test
     @Order(1)
     public void addEmployee() throws Exception {
         RegisterEmployeeDto newEmployeeDto = modelMapper.map(employee, RegisterEmployeeDto.class);
