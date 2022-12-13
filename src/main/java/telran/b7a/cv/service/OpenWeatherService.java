@@ -23,7 +23,9 @@ public class OpenWeatherService implements WeatherService {
 
     @Override
     public Double[] getCoordinatesByCity(String city) {
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(BASE_URL).queryParam("q", city)
+        UriComponentsBuilder builder = UriComponentsBuilder
+        		.fromHttpUrl(BASE_URL)
+        		.queryParam("q", city)
                 .queryParam("appid", API_KEY);
         RestTemplate restTemplate = new RestTemplate();
         RequestEntity<String> requestEntity = new RequestEntity<>(HttpMethod.GET, builder.build().toUri());
